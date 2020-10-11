@@ -1,0 +1,31 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    
+    &__side {
+        background-color: orangered;
+        height: 50rem;
+        transition: all .8s;
+
+        &--front {
+            background-color: green;
+        }
+
+        &--back {
+            background-color: palegoldenrod;
+        }
+    }
+
+    &:hover &__side {
+        transform: rotateY(180deg);
+        .card__side {
+            
+            &--front {
+                display: none;
+            }
+            &--back {
+                display: inline-block;
+            }
+        }
+    }
+}
