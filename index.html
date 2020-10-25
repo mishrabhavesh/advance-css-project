@@ -15,6 +15,26 @@
 </head>
 
 <body>
+  
+  <div class="navigation">
+    <input type="checkbox" id="navi-toggle" class="navigation__checkbox" />
+    <label for="navi-toggle" class="navigation__button">MENU</label>
+
+    <div class="navigation__background">
+      &nbsp;
+    </div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link">About Natous</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Your benefits</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+
+      </ul>
+    </nav>
+  </div>
   <header class="header">
     <div class="header__logo-box">
       <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -248,6 +268,56 @@
 
       <div class="u-center-text u-margin-top-huge">
         <a href="#" class="btn-text">Read all stories</a>
+      </div>
+    </section>
+
+    <section class="section-book">
+      <div class="row">
+        <div class="book">
+          <div class="book__form">
+            <form action="#" class="form">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                  Start booking now
+                </h2>
+              </div>
+
+              <div class="form__group">
+                <input id="name" type="text" class="form__input" placeholder="Full Name" required />
+                <label for="name" class="form__label">Full Name</label>
+              </div>
+
+              <div class="form__group">
+                <input id="email" type="email" class="form__input" placeholder="Email address" required />
+                <label for="email" class="form__label">Email address</label>
+              </div>
+
+              <div class="form__group">
+                <div class="form__radio-group">
+                  <input type="radio" class="form__radio-input" id="small" name="size" />
+                  <label for="small" class="form__radio-label">
+                    Small tour group
+                    <span class="form__radio-button"></span>
+                  </label>
+                </div>
+
+                <div class="form__radio-group">
+                  <input type="radio" class="form__radio-input" id="large" name="size" />
+                  <label for="large" class="form__radio-label">
+                    Large tour group
+                    <span class="form__radio-button"></span>
+                  </label>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--green">
+                    Next Step &rarr; 
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   </main>
